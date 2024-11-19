@@ -1,3 +1,5 @@
 venv/
 
+proxies/__pycache__/
+
 test.py

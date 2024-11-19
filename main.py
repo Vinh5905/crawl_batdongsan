@@ -53,7 +53,7 @@ class PageContainer():
             else: return f'{self.__base_link}/p{page}'
         else:
             if self.page == 1: return self.__base_link
-            else: return f'{self.__base_link}/p{self.page}'
+            else: return f'{self.__base_link}/p{self.page_num}'
 
     def get_proxy_random(self):
         proxy_stt = random.randrange(0, len(self.proxies_list))
@@ -264,7 +264,7 @@ class PageContainer():
             for i in range(len(all_links)):
                 if i >= self.link_num:
                     data = self.get_data_in_link(all_links[i])
-                    print(data)
+                    # print(data)
                     self.add_data_to_json(data)
             
             self.page_num += 1
@@ -277,3 +277,4 @@ class PageContainer():
 
 page = PageContainer('https://batdongsan.com.vn/cho-thue-nha-tro-phong-tro-tp-hcm')
 page.run()
+# print(len(page.get_all_links_in_page(page.get_link_page(16))))
