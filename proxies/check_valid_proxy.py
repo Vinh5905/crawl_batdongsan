@@ -67,4 +67,3 @@ if __name__ == '__main__':
 
     # Close file valid
     file_valid.close()
-

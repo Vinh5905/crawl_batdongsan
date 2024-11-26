@@ -16,8 +16,10 @@ from proxies.check_valid_proxy import check_proxy_valid
 # Get data from link
 # Add to csv (save page, column for next time)
 
-class PageContainer():
+# Dựng class theo cấp độ js có css class
+# Nếu nằm bên trong 
 
+class PageContainer():
     def __init__(self, base_link):
         self.__base_link = base_link
 
